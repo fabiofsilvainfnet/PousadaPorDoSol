@@ -1,7 +1,9 @@
 package br.edu.infnet.model;
 
 import java.util.Date;
-
+/**
+	Classe para definicão da estrutura de uma reserva de quarto
+*/
 public class Reserva {
 
 	private Integer id;
