@@ -1,5 +1,11 @@
 package br.edu.infnet.model;
 
+/**
+ * 
+ * @author Fábio Silva
+ *
+ */
+
 public class Usuario {
 	
 	private int id;
