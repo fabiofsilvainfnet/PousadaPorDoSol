@@ -46,13 +46,9 @@ public class Usuario {
 	public void setAtivo(boolean ativo) {
 		this.ativo = ativo;
 	}
-
-
 	public PerfilEnum getPerfil() {
 		return perfil;
 	}
-
-
 	public void setPerfil(PerfilEnum perfil) {
 		this.perfil = perfil;
 	}
