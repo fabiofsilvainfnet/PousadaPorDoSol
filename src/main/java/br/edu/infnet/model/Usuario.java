@@ -13,7 +13,18 @@ public class Usuario {
 	private String senha;
 	private boolean ativo;
 	private PerfilEnum perfil;
+	
+	public Usuario() {
+	}
 
+	public Usuario(int id, String login, String senha, boolean ativo, PerfilEnum perfil) {
+		this.id = id;
+		this.login = login;
+		this.senha = senha;
+		this.ativo = ativo;
+		this.perfil = perfil;
+	}
+	
 	public Usuario(String login, String senha, PerfilEnum perfil) {
 		this.login = login;
 		this.senha = senha;

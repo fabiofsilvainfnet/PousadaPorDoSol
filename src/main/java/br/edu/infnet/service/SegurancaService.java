@@ -1,12 +1,14 @@
 package br.edu.infnet.service;
 
-import br.edu.infnet.model.PerfilEnum;
 import br.edu.infnet.model.Usuario;
+import dao.UsuarioDAO;
 
 public class SegurancaService {
 
 	public boolean logar(String login, String senha) {
-		Usuario usuario = new Usuario("fabiosilva", "123456", PerfilEnum.ADMINISTRADOR);
+		
+		UsuarioDAO dao = new UsuarioDAO("usuario");
+		Usuario usuario = dao.buscar(login);
 		return usuario.getSenha().equals(senha) && usuario.getLogin().equals(login); 
 	}
 	
